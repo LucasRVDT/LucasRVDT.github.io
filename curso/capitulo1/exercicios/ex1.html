@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Sistema de gerenciamento</title>
-  </head>
-  <body>
-    <main>
-      <h1>Sistema de gerenciamento de tarefas</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore velit
-        tempore perferendis officiis fugit veritatis beatae suscipit commodi sit
-        id deserunt hic odit, adipisci mollitia voluptatem. Velit, repellendus.
-        Placeat, excepturi.
-      </p>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+  </style>
+  <title>Tabelas</title>
+</head>
+
+<body>
+  <main>
+    <h1>Tabelas</h1>
+
+    <h2>célula com 2 colunas:</h2>
+
+    <table>
+      <tr>
+        <th>Nome </th>
+        <th colspan="2">Telefone</th>
+      </tr>
+      <tr>
+        <td>José das colves</td>
+        <td> (22)2768-6677</td>
+        <td> (22)2768-6677</td>
+      </tr>
+    </table>
+
+    <h2>célula com 2 linhas:</h2>
+    <table>
+      <tr>
+        <th colspan="1"> Nome: </th>
+        <td colspan="1">José das colves</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Telefone:</th>
+        <td colspan="1"> (22)2768-6677</td>
+        <td colspan="1"> (22)2768-6677</td>
+      </tr>
+    </table>
+
+    <h2>Tabela com Legenda:</h2>
+    <table>
+      <tr>
+        <th> Mês </th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>Janeiro</td>
+        <td>R$1.500,00</td>
+      </tr>
+      <tr>
+        <td>Fevereiro</td>
+        <td>R$1.470,00</td>
+      </tr>
+    </table>
+
+    <br>
+    
+    <form action="http://www.google.com/search" method="get">
+      Pesquisar:
+      <input type="text" name="q" />
+      <input type="submit" value="search" />
+    </form>
+  </main>
+</body>
+
 </html>
